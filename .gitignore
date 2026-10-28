@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Secrets
+.env
+.env.example
+backlog-discord-notify/config.php
+backlog-discord-notify/test.php
+backlog-discord-notify/notify.php
+
+# Build output
+dist/
