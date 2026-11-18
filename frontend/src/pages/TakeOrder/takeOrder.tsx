@@ -87,7 +87,7 @@ function TakeOrder() {
     0
   );
 
-  function addFood(food) {
+  function addFood(food: SelectedFood) {
     if (selectedFoods.length < 3 && !selectedFoods.some((item) => item.id === food.id)) {
       setSelectedFoods((prev) => [...prev, food]);
     }
@@ -99,7 +99,7 @@ function TakeOrder() {
     );
   }
 
-  function toggleFood(food: any) {
+  function toggleFood(food: SelectedFood) {
     // console.log(foods);
     if(selectedFoods.some((selectedFood) => selectedFood.id === food.id)) {
       // console.log(food);
