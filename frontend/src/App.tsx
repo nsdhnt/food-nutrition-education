@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import Home from './pages/Home/Home';
+import TakeOrder from './pages/TakeOrder/takeOrder';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/takeOrder' element={<TakeOrder />} />
         </Routes>
       </BrowserRouter>
     </>
