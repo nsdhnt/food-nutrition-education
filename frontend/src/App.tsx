@@ -2,6 +2,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router';
 import Home from './pages/Home/Home';
 import TakeOrder from './pages/TakeOrder/takeOrder';
+import Cooking from './pages/Cooking/cooking';
 import './App.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/takeOrder' element={<TakeOrder />} />
+          <Route path='/cooking' element={<Cooking />} />
         </Routes>
       </BrowserRouter>
     </>
